@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" type="text/css" href="formDesign.css">
+</head>
+
+<body>
+<header>STUDENT DATA PROFILE</header>
+<br>
+    <div class="container">
+        <h4><strong>Data Privacy Notice:</strong></h4>
+        <div class="privacy-notice">
+            <p>
+                The "school" Ramon Magsaysay Memorial Colleges is committed to respecting each student′s personal privacy in compliance with the Data Privacy Act of 2012. 
+                <br><br>
+                It is understood that you agree to share your personal information by continuing to fill-up this form.
+            </p>
+        </div>
+        
+        <form action="database.php">
+            <div class="section">
+                <hr>
+                <h4><strong>STUDENT CLINICAL-BASAL DATA</strong></h4>
+
+                <label>Basic Information</label>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter age" ><br>
+                <br>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" placeholder="Enter height in cm" ><br>
+                <br>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter weight in kg" ><br>
+            
+                <label for="blood_type">Blood Type:</label>
+                <select id="blood_type" name="blood_type">
+                    <option value="">- Select -</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+            </select>
+
+                <h3>Medical History</h3>
+                <label for="diseases">Congenital (Inborn) Diseases/Disabilities (if any):</label>
+                <input type="text" id="diseases" name="diseases" placeholder="Enter diseases or disabilities (if any)">
+
+                <label for="dateDiagnosed">Date Diagnosed:</label>
+                <input type="date" id="dateDiagnosed" name="dateDiagnosed">
+
+                <label>Previous Hospitalization</label>
+                <label for="hospital1">1. Saan?</label>
+                <input type="text" id="hospital1" name="hospital1" placeholder="Enter hospital name/location">
+
+                <label for="date1">Date (Kailan?):</label>
+                <input type="date" id="date1" name="date1">
+
+                <label for="hospital2">2. Saan?</label>
+                <input type="text" id="hospital2" name="hospital2" placeholder="Enter hospital name/location">
+
+                <label for="date2">Date (Kailan?):</label>
+                <input type="date" id="date2" name="date2">
+
+                <label>Allergies (if any)</label>
+                <label for="allergyMedicine">Medicine:</label>
+                <input type="text" id="allergyMedicine" name="allergyMedicine" placeholder="Enter any medicine allergies">
+
+                <label for="allergyFood">Food:</label>
+                <input type="text" id="allergyFood" name="allergyFood" placeholder="Enter any food allergies">
+
+                <label for="allergyOthers">Others:</label>
+                <input type="text" id="allergyOthers" name="allergyOthers" placeholder="Enter other allergies">
+
+                <label>Medications (Emergency/Maintenance)</label>
+                <label for="medication">Medication & Indications (if any):</label><br>
+                <textarea id="medication" name="medication" placeholder="Enter medications and their indications"></textarea>
+
+                <hr>
+                <div class="privacy-agreement">
+                    <h4>Data Privacy Agreement</h4>
+                    
+                    <p>
+                        I hereby allow the school "Ramon Magsaysay Memorial Colleges Inc." to collect, use and process my personal data for legitimate educational or institutional interest as determined and enumerated in the Privacy Statement and other like circumstances, and allow its authorized personnel to process the information.
+                        <br><br>
+                        I am confirming that data entered with this admission is true and correct; and I understand that Ramon Magsaysay Memorial Colleges reserves the right to revise any decision made on the basis of the information I provide should be found to be untrue or incorrect.
+                    </p>
+
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="agree" id="agree" required> Yes, I agree</label>
+                    </div>
+                </div>
+                
+                    <br>
+
+                <div class="form-nav">
+                    <button><a href="Page3.html">Back</a></button>
+                    <button onclick="register()">Register Now</button>
+                </div>
+            </div>
+        </form>
+    </div><br><br>
+    <script src="form.js"></script>
+</body>
+</html>

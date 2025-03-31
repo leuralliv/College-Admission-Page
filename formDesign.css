@@ -1,0 +1,106 @@
+body {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://marketplace.canva.com/EAGKVeRrXhA/1/0/1600w/canva-blue-and-white-modern-bordered-background-instagram-post-XBgvDbZ9xfU.jpg');
+    background-repeat: no-repeat;       /* Prevents the image from repeating */
+    background-size: cover;             /* Ensures the image covers the entire element */
+    background-position: center;        /* Centers the image */
+}
+header{
+    background-color: #0066CC;
+    text-align: center;
+    justify-self: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    max-width: 400px;
+    border-radius: 35px;
+}
+.privacy-notice{
+    padding: 5px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(52, 98, 237);
+
+}
+h4{
+    color: blue;
+    margin-top: 20px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.container{
+    padding: 0px 25px 25px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    justify-self: center;
+    max-width: 780px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-image: url('https://freevector-images.s3.amazonaws.com/uploads/vector/preview/41724/Vector4free-Subtle-Gradient-Background-Rvsi1-DP0223_generated.jpg'); */
+    background-color: #ffffffa1;
+    background-repeat: no-repeat;       /* Prevents the image from repeating */
+    background-size: cover;             /* Ensures the image covers the entire element */
+    background-position: center;        /* Centers the image */
+}
+.radio-list label{
+    display: flex;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+input[type="text"], input[type="date"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+label {
+    width: 100px;
+    display:inline;
+}
+.selections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.checkbox{
+    text-align: center;
+}
+.form-nav{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+:placeholder-shown{
+    text-align: center;
+}
+.privacy-agreement{
+    padding: 25px;
+    border-radius: 25px;
+    background-color: white;
+}
+

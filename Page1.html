@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" type="text/css" href="formDesign.css">
+</head>
+<body><br>
+   <header>STUDENT DATA PROFILE</header>
+   <br>
+   <div class="container">
+    <h4><strong>Data Privacy Notice:</strong></h4>
+    <div class="privacy-notice">
+        <p>
+            The "school" Ramon Magsaysay Memorial Colleges is committed to respecting each student′s personal privacy in compliance with the Data Privacy Act of 2012. 
+            <br><br>
+            It is understood that you agree to share your personal information by continuing to fill-up this form.
+        </p>
+    </div>
+
+        <hr>
+        <form method="POST" action="database.php">
+            <div class="form-group">
+                <label name="course">Course: </label>
+                <div class="radio-list">
+                    <label for="College"><input type="radio" name="course" id="College" value="College">College </label>
+                    <label for="Masteral"><input type="radio" name="course" id="Masteral" value="Masteral">Masteral </label>
+                    <label for="Senior High"><input type="radio" name="course" id="Senior High" value="Senior High">Senior High </label>
+                    <label for="TVET"><input type="radio" name="course" id="TVET" value="TVET">TVET </label><br>
+                </div>
+
+                <div class="selections">
+                    <div class="select">
+                        <label>Semester:</label>
+                        <select name="semester">
+                            <option value="1st Semester">1st Semester</option>
+                            <option value="2nd Semester">2nd Semester</option>
+                        </select>
+                    </div>
+                        
+                    <div class="select">
+                        <label>School Year:</label>
+                        <select name="school_year">
+                            <option value="2024-2025"> 2024 - 2025 </option>
+                            <option value="2025-2026"> 2025 - 2026 </option>
+                        </select>
+                    </div>
+                </div>
+
+                    <hr> 
+                    <h4>PERSONAL DATA</h4>
+                    <label>Surname:</label>
+                    <input type="text" name="surname" required><br>
+                    <label>Given Name:</label>
+                    <input type="text" name="given_name" required><br>
+                    <label>Middle Name:</label>
+                    <input type="text" name="middle_name" required><br>
+
+                    <label>Citizenship:</label>
+                    <select id="citizenship" name="citizenship">
+                        <option value="">- Select -</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="American">American</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Australian">Australian</option>
+                        <option value="British">British</option>
+                        <option value="Canadian">Canadian</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="German">German</option>
+                        <option value="French">French</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Malaysian">Malaysian</option>
+                        <option value="Singaporean">Singaporean</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+                
+                    <label>Gender:</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select><br>
+
+                    <label>Indigenous?</label>
+                    <div class="radio-list">
+                        <label>
+                        <input type="radio" id="yes" name="indigenous" value="Yes">Yes</label>
+                        <label>
+                        <input type="radio" id="no" name="indigenous" value="No">No</label>
+                    </div>
+
+                    <label>Ethnicity:</label>
+                    <select name="ethnicity">
+                        <option value="">- Select -</option>
+                        <option value="Aeta">Aeta</option>
+                        <option value="Agta">Agta</option>
+                        <option value="Apayao">Apayao</option>
+                        <option value="Badjao">Badjao</option>
+                        <option value="Bagobo">Bagobo</option>
+                        <option value="B'laan">B'laan</option>
+                        <option value="Bukidnon">Bukidnon</option>
+                        <option value="Cebuano">Cebuano</option>
+                        <option value="Gaddang">Gaddang</option>
+                        <option value="Higaonon">Higaonon</option>
+                        <option value="Ibaloi">Ibaloi</option>
+                        <option value="Ibanag">Ibanag</option>
+                        <option value="Ifugao">Ifugao</option>
+                        <option value="Ilocano">Ilocano</option>
+                        <option value="Ilongot">Ilongot</option>
+                        <option value="Ivatan">Ivatan</option>
+                        <option value="Kalinga">Kalinga</option>
+                        <option value="Kankanaey">Kankanaey</option>
+                        <option value="Maguindanao">Maguindanao</option>
+                        <option value="Manobo">Manobo</option>
+                        <option value="Maranao">Maranao</option>
+                        <option value="Palawanon">Palawanon</option>
+                        <option value="Pangasinense">Pangasinense</option>
+                        <option value="Sama">Sama</option>
+                        <option value="Subanon">Subanon</option>
+                        <option value="Surigaonon">Surigaonon</option>
+                        <option value="Tagalog">Tagalog</option>
+                        <option value="Tausug">Tausug</option>
+                        <option value="Teduray">Teduray</option>
+                        <option value="Tingguian">Tingguian</option>
+                        <option value="T'boli">T'boli</option>
+                        <option value="Waray">Waray</option>
+                        <option value="Yakan">Yakan</option>
+                    </select><br>
+
+                    <label for="dialect">Dialect:</label>
+                    <select id="dialect" name="dialect">
+                        <option value="">- Select -</option>
+                        <option value="Aklanon">Aklanon</option>
+                        <option value="Bikol">Bikol</option>
+                        <option value="Cebuano">Cebuano</option>
+                        <option value="Chavacano">Chavacano</option>
+                        <option value="English">English</option> <!-- Added English -->
+                        <option value="Hiligaynon">Hiligaynon</option>
+                        <option value="Ibanag">Ibanag</option>
+                        <option value="Ilocano">Ilocano</option>
+                        <option value="Ivatan">Ivatan</option>
+                        <option value="Kalinga">Kalinga</option>
+                        <option value="Kapampangan">Kapampangan</option>
+                        <option value="Kinaray-a">Kinaray-a</option>
+                        <option value="Maguindanao">Maguindanao</option>
+                        <option value="Maranao">Maranao</option>
+                        <option value="Pangasinense">Pangasinense</option>
+                        <option value="Sambal">Sambal</option>
+                        <option value="Surigaonon">Surigaonon</option>
+                        <option value="Tagalog">Tagalog</option>
+                        <option value="Tausug">Tausug</option>
+                        <option value="T'boli">T'boli</option>
+                        <option value="Waray">Waray</option>
+                        <option value="Yakan">Yakan</option>
+                    </select><br>
+
+                    <label for="religion">Religion:</label>
+                    <select id="religion" name="religion">
+                        <option value="">- Select -</option>
+                        <option value="Roman Catholic">Roman Catholic</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Iglesia ni Cristo">Iglesia ni Cristo</option>
+                        <option value="Evangelical Christianity">Evangelical Christianity</option>
+                        <option value="Aglipayan (Philippine Independent Church)">Aglipayan (Philippine Independent Church)</option>
+                        <option value="Buddhism">Buddhism</option>
+                        <option value="Jehovah's Witnesses">Jehovah's Witnesses</option>
+                        <option value="Seventh-day Adventist">Seventh-day Adventist</option>
+                        <option value="Born Again Christianity">Born Again Christianity</option>
+                        <option value="Judaism">Judaism</option>
+                        <option value="Mormonism (Latter-day Saints)">Mormonism (Latter-day Saints)</option>
+                        <option value="Hinduism">Hinduism</option>
+                        <option value="Other Christian denominations">Other Christian denominations</option>
+                        <option value="Other religions">Other religions</option>
+                        <option value="No religion (Atheist/Agnostic)">No religion (Atheist/Agnostic)</option>
+                    </select><br>
+
+                    <label>Birth Date:</label>
+                    <input type="date" name="birthdate"><br>
+                    <label>Birth Place:</label>
+                    <input type="text" name="birthplace" placeholder="saan ka pinanganak?"><br>
+                    <label>Contact no:</label>
+                    <input type="number" name="contact_no" placeholder="09123456789"><br>
+                    <br>
+
+
+                    <label>Civil Status:</label>
+                    <div class="radio-list">
+                        <label>
+                        <input type="radio" id="single" name="civil_status" value="single">Single</label>
+                        <label>
+                        <input type="radio" id="married" name="civil_status" value="married">Married</label>
+                        <label>
+                        <input type="radio" id="widowed" name="civil_status" value="widowed">Widowed</label>
+                    </div><br>
+
+                    <!-- <hr> -->
+
+                    <label>Home Address:</label>
+                    <input type="text" name="home_address" placeholder="street/block/barangay">
+                    <br>
+                    <label>Email Address:</label>
+                    <input type="email" name="email" placeholder="sample@gmail.com">
+                    <br>
+                    <label>Entry Type:</label>
+                    <div class="radio-list">
+                        <label>
+                        <input type="radio" id="new" name="entry_type" value="New">New</label>
+                        <label>
+                        <input type="radio" id="transferee" name="entry_type" value="Transferee">Transferee</label> 
+                        <label>
+                        <input type="radio" id="returnee" name="entry_type" value="Returnee">Returnee</label> 
+                    </div>
+
+                    <div class="form-row">
+                        <label>Documents:</label>
+                        <label><input type="checkbox" name="documents" value="F137"> F137</label>
+                        <label><input type="checkbox" name="documents" value="BC"> BC</label>
+                        <label><input type="checkbox" name="documents" value="GMC"> GMC</label>
+                        <label><input type="checkbox" name="documents" value="M-contract"> M-contract</label>
+                        <label><input type="checkbox" name="documents" value="OTR"> OTR</label>
+                        <label><input type="checkbox" name="documents" value="F138/card"> F138/card</label>
+                    </div><br>
+
+                    <label for="entrance_exam_result">ENTRANCE EXAM RESULT:</label>
+                    <input type="number" name="entrance_exam_result" value="">
+                    <br><br>
+                </div>
+                
+                <div class="form-nav">
+                    <!-- <button onclick="Register()">Register</button> -->
+                    <button onclick="register()">Submit</a></button>
+                </div>
+
+            </div><br><br>
+        </form>
+   </div>
+</body>
+</html>
